@@ -18,19 +18,19 @@ int nums_5[] = {-1,-1,-1,-1,1,1};
 
 TEST_CASE("Test week1/2 functions") {
   SUBCASE("non-negative prefix sums") {
-      CHECK(non_negative_prefix_sum(nums_0, ARRAY_SIZE(nums_0)) == true);
-      CHECK(non_negative_prefix_sum(nums_1, ARRAY_SIZE(nums_1)) == false);
-      CHECK(non_negative_prefix_sum(nums_2, ARRAY_SIZE(nums_2)) == true);
-      CHECK(non_negative_prefix_sum(nums_3, ARRAY_SIZE(nums_3)) == false);
-      CHECK(non_negative_prefix_sum(nums_4, ARRAY_SIZE(nums_4)) == true);
-      CHECK(non_negative_prefix_sum(nums_5, ARRAY_SIZE(nums_5)) == false);
+      CHECK(non_negative_sum(nums_0, ARRAY_SIZE(nums_0)) == true);
+      CHECK(non_negative_sum(nums_1, ARRAY_SIZE(nums_1)) == false);
+      CHECK(non_negative_sum(nums_2, ARRAY_SIZE(nums_2)) == true);
+      CHECK(non_negative_sum(nums_3, ARRAY_SIZE(nums_3)) == false);
+      CHECK(non_negative_sum(nums_4, ARRAY_SIZE(nums_4)) == true);
+      CHECK(non_negative_sum(nums_5, ARRAY_SIZE(nums_5)) == false);
   };
   SUBCASE("non-positive prefix sums") {
-      CHECK(non_positive_prefix_sum(nums_0, ARRAY_SIZE(nums_0)) == true);
-      CHECK(non_positive_prefix_sum(nums_1, ARRAY_SIZE(nums_1)) == true);
-      CHECK(non_positive_prefix_sum(nums_2, ARRAY_SIZE(nums_2)) == false);
-      CHECK(non_positive_prefix_sum(nums_3, ARRAY_SIZE(nums_3)) == false);
-      CHECK(non_positive_prefix_sum(nums_4, ARRAY_SIZE(nums_4)) == false);
-      CHECK(non_positive_prefix_sum(nums_5, ARRAY_SIZE(nums_5)) == true);
+      CHECK(non_positive_sum(nums_0, ARRAY_SIZE(nums_0)) == true);
+      CHECK(non_positive_sum(nums_1, ARRAY_SIZE(nums_1)) == true);
+      CHECK(non_positive_sum(nums_2, ARRAY_SIZE(nums_2)) == false);
+      CHECK(non_positive_sum(nums_3, ARRAY_SIZE(nums_3)) == false);
+      CHECK(non_positive_sum(nums_4, ARRAY_SIZE(nums_4)) == false);
+      CHECK(non_positive_sum(nums_5, ARRAY_SIZE(nums_5)) == true);
   };
 }
