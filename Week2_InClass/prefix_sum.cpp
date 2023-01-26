@@ -1,8 +1,8 @@
 #include "prefix_sum.h"
 
-int prefix_sum(int array[], int last) {
+int prefix_sum(int array[], int length) {
     int sum = 0;
-    for (int i = 0; i < last; i++) {
+    for (int i = 0; i < length; i++) {
         sum += array[i];
     }
 
