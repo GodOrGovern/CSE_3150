@@ -1,0 +1,5 @@
+Run "make all" to compile and run unit tests for linked_list.cpp
+
+After running "make all", "./main" will execute the functions for a list of size 10
+
+Valgrind can be used to ensure there are no memory leaks (eg "valgrind ./unit_tests")
