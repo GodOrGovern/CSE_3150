@@ -1,0 +1,3 @@
+Run "make all" to compile and run unit tests
+
+After running "make all", "./main" will execute the functions for one student
